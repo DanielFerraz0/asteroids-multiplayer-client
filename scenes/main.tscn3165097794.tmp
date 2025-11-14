@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://cms4o68m1b8fk"]
+
+[ext_resource type="Script" uid="uid://bvyui0wmyl2jl" path="res://scripts/main.gd" id="1_o5qli"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_o5qli")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 469.0
+offset_bottom = 39.0
+
+[node name="Username Field" type="LineEdit" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.007
+anchor_top = 0.041
+anchor_right = 0.42400002
+anchor_bottom = 0.46600002
+offset_left = -0.052000046
+offset_top = 0.0069999695
+offset_right = 0.13598633
+offset_bottom = -0.018001556
+placeholder_text = "Type your name"
+
+[node name="Join Button" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.43300003
+anchor_top = 0.041
+anchor_right = 0.61
+anchor_bottom = 0.46600002
+offset_left = 0.21199036
+offset_top = 0.0069999695
+offset_right = -33.089996
+offset_bottom = 14.431997
+text = "Join
+"

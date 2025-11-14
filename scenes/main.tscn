@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://cms4o68m1b8fk"]
+
+[ext_resource type="Script" uid="uid://bvyui0wmyl2jl" path="res://scripts/main.gd" id="1_o5qli"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_o5qli")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 371.0
+offset_bottom = 39.0
+
+[node name="Username Field" type="LineEdit" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.007
+anchor_top = 0.041
+anchor_right = 0.42400002
+anchor_bottom = 0.46600002
+offset_left = -0.052000046
+offset_top = 0.0069999695
+offset_right = 0.13598633
+offset_bottom = -0.018001556
+placeholder_text = "Type your name"
+
+[node name="Join Button" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.43300003
+anchor_top = 0.041
+anchor_right = 0.53900003
+anchor_bottom = 0.46600002
+offset_left = 0.21199036
+offset_top = 0.0069999695
+offset_right = 0.20898438
+offset_bottom = 14.431997
+text = "Join
+"
+
+[node name="Leave Button" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.54800004
+anchor_top = 0.051000003
+anchor_right = 0.665
+anchor_bottom = 0.846
+offset_left = -0.012023926
+offset_top = 0.010999918
+offset_right = 0.114990234
+offset_bottom = 0.006000519
+text = "Leave"
